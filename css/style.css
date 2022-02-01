@@ -63,7 +63,7 @@
   color: #FFFFFF;
   text-decoration: none;
   margin-left: 18px;
-  
+
 }
 
 .header__lang-link_active {
@@ -267,9 +267,9 @@
 }
 
 .photo-grid {
-  max-width: 1184px;
+  max-width: calc(100% - 96px);
   margin: 0 auto;
-  padding-bottom: 92px;
+  padding-bottom: 82px;
 }
 
 .photo-grid__items {
@@ -283,12 +283,12 @@
 
 .photo-grid__item {
   width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width:1024px) {
   .photo-grid {
-    max-width: 928px;
-    padding-bottom: 92px;
+    padding-bottom: 72px;
   }
   .photo-grid__items {
     gap: 14px;
@@ -299,7 +299,6 @@
 @media (max-width:768px){
   .photo-grid {
     max-width: 720px;
-    padding-bottom: 88px;
   }
 }
 
@@ -383,11 +382,12 @@
 
 @media (max-width: 768px) {
   .places {
-    max-width: 720px;
+    max-width: calc(100% - 48px);
   }
   .place {
     grid-template-columns: minmax(260px,340px) minmax(260px,352px);
     column-gap: 28px;
+    padding-bottom: 73px;
    }
   .place__title {
     font-size: 42px;
