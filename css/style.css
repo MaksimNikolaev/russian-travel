@@ -494,7 +494,7 @@
 }
 
 .cover__background {
-  background: url('/images/cover-trains.jpg') no-repeat center;
+  background: url('.././images/cover-trains.jpg') no-repeat center;
     background-size: contain;
     position: absolute;
     top: 0;
@@ -507,4 +507,117 @@
 
 .cover__background:hover {
   opacity: 0.3;
+}
+
+@media (max-width: 1024px) {
+  .cover {
+    max-width: 1024px;
+  }
+  .cover__link {
+    min-height: 640px;
+  }
+  .cover__title {
+    font-style: 72px;
+    line-height: 76px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover {
+    padding-bottom: 88px;
+  }
+  .cover__link {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 525px) {
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 288px;
+    padding-bottom: 16px;
+  }
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 288px;
+  }
+  .cover__link {
+    min-height: 330px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cover {
+    padding-bottom: 64px;
+  }
+  .cover__link {
+    min-height: 200px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  max-width: 1174px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+.menu {
+  
+}
+.menu__links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu__link {
+  margin-right: 18px;
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer__copyright {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    max-width: 928px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    max-width: 720px;
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 525px) {
+  .footer {
+    flex-direction: column;
+  }
+  .menu__link {
+    margin-bottom: 32px;
+  }
+  .menu__links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  .menu__link {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .menu__link:last-child {
+    margin-bottom: 48px;
+  }
 }
