@@ -1,0 +1,25 @@
+.places {
+  max-width: 984px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  padding-bottom: 92px;
+}
+
+@media (max-width: 1024px) {
+  .places {
+    max-width: 90.625%;
+  }
+}
+
+@media (max-width: 768px) {
+  .places {
+    max-width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 320px) {
+  .places {
+    max-width: 100%;
+    padding-bottom: 66px;
+  }
+}
